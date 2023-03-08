@@ -1,0 +1,3 @@
+[submodule "RethinkAPI"]
+	path = RethinkAPI
+	url = https://github.com/Epicminer256/RethinkAPI

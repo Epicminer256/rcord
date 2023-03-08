@@ -1,0 +1,1 @@
+Your auth token expired, so you need to re-register. This is a known bug that will be fixed in the future.

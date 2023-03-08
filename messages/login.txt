@@ -1,0 +1,8 @@
+You are now on the login page
+Here are the avaliable commands...
+/rt username (username)
+  Sets your Rethink username
+/rt password (password)
+  Sets your Rethink password
+/rt login 
+  Using the username and password, Rethink+ will try to link your Rethink account

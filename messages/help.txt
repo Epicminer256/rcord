@@ -1,0 +1,22 @@
+/rt help
+  Displays help message
+/rt register
+  Links discord account with Rethink
+/rt logout
+  Unlink discord account with Rethink
+/rt status
+  Get week, account status, and Rethink token status
+/rt list (pub)
+  By default this lists classes for yourself, but can also list all classes
+/rt users
+  gets all rethink users from this server
+/rt week (up/down)
+  moves selected week
+/rt remove (classid)
+  Removes a class
+/rt add (classid)
+  Adds a class
+
+Some future commands not implimented yet:
+/rt remind (on/off)
+  Reminds you to sign up for a rethink class
