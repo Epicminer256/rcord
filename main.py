@@ -6,6 +6,7 @@ from time import sleep
 from threading import Thread
 import signal
 from sstate import *
+from datetime import datetime
 
 signal.signal(signal.SIGINT, save_and_exit)
 print("Press CTRL+C to stop server")
@@ -204,7 +205,7 @@ async def on_message(message):
                         selday = ""
                         for c in classes:
                             if selday != c["date"]:
-                                finout = finout + "```"+c["date"]+"```\n"
+                                finout = finout + "**```"+datetime.strptime(c["date"], '%Y-%m-%d').strftime("%A")+" "+c["date"]+"```**\n"
                                 selday = c["date"]
                             finout = finout + "`"
                             if c["type"].lower() != "open":
@@ -241,7 +242,7 @@ async def on_message(message):
                         selday = ""
                         for c in classes:
                             if selday != c["date"]:
-                                finout = finout + "```"+c["date"]+"```\n"
+                                finout = finout + "**```"+datetime.strptime(c["date"], '%Y-%m-%d').strftime("%A")+" "+c["date"]+"```**\n"
                                 selday = c["date"]
                             finout = finout + "`"
                             if c["type"].lower() != "open":
